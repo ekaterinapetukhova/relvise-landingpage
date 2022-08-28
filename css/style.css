@@ -157,6 +157,9 @@ img {
 .main__advantages {
 }
 
+.main__practice {
+}
+
 /* -------------------------------------- HEADER-BLOCK ----------------------------------------- */
 .header-block {
     text-align: center;
@@ -330,7 +333,7 @@ img {
 /* ----------------------------------- ADVANTAGES ---------------------------------- */
 
 .advantages {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 @media (max-width: 992px) {
@@ -399,4 +402,93 @@ img {
 }
 .advantages__text {
     line-height: 150%;
+}
+
+/* ----------------------------------- PRACTICE ---------------------------------- */
+
+.practice {
+    padding: 125px 0 80px 0;
+}
+@media (max-width: 1040px) {
+    .practice {
+        padding: 40px 0 80px 0;
+    }
+}
+@media (max-width: 670px) {
+    .practice {
+        padding: 25px 0 80px 0;
+    }
+}
+
+.practice__header {
+    margin-bottom: 45px;
+}
+.practice__body {
+    margin: 0 -20px -30px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.practice__column {
+    padding: 0 20px;
+    flex: 0 1 25%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1040px) {
+    .practice__column {
+        flex: 0 1 50%;
+    }
+}
+
+@media (max-width: 670px) {
+    .practice__column {
+        flex: 0 1 100%;
+    }
+}
+.practice__item {
+}
+.item-practice {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item-practice__content {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.practice__header {
+    margin-bottom: 45px;
+}
+@media (max-width: 670px) {
+    .practice__header {
+        margin-bottom: 30px;
+    }
+}
+
+.practice-item__link {
+    display: inline-block;
+    transition: all .3s;
+}
+
+.practice-item__link:hover {
+    text-decoration: underline;
+}
+.practice-item__link:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.practice-item__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    color: #252b42;
+}
+
+.practice-item__img {
+    padding-bottom: 60%;
+    display: block;
 }
